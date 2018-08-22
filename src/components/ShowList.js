@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 class ShowList extends React.Component {
   render() {
@@ -15,5 +16,9 @@ class ShowList extends React.Component {
     );
   }
 }
+
+ShowList.defaultProps = {
+  names: []
+};
 
 export default ShowList;

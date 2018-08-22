@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 class AddFriend extends React.Component {
   constructor(props) {
@@ -37,5 +38,9 @@ class AddFriend extends React.Component {
     );
   }
 }
+
+AddFriend.propTypes = {
+  addNew: PropTypes.func.isRequired
+};
 
 export default AddFriend;
